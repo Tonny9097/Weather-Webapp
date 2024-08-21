@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="Assets/weather-icon-png-11063.png" type="image/png" />
+    <title>WeWeather - Home</title>
+  </head>
+  <body>
+    <form class="searchbar" id="searchForm">
+      <input type="text" id="search" placeholder="Search for a city"/>
+      <button id="searchbtn" type="submit">Search</button>
+    </form>
+
+   <div class="contentContanier">
+    <div class="weatherInfo">
+      <h1 id="cityName"></h1>
+      <div class="weatherCards">
+        <div class="weatherCard overview">
+          <h1 class="overviewIntro">General Overview :</h1>
+          <img class="weatherIcon" id="weatherIcon" src="" alt="weatherIcon" />
+          <h1  id = "mainCondition"></h1>
+          <p id="mainDescription"></p>
+        </div>
+
+        <div class="weatherCard overview">
+          <h1 class="overviewIntro">Temperature: </h1>
+          <img class="weatherIcon" src="Assets/Thermometer_icon.png" alt="temperature" />
+          <h1 id = "mainTemperature"></h1>
+          <p style="display: flex;"><p>Feels Like:</p><p id="feelsTemp"> </p></p>
+        </div>
+
+        <div class="weatherCard">
+          <h1 class="overviewIntro">Wind: </h1>
+          <img class="weatherIcon" src="Assets/wind.png" alt="wind" />
+          <h1 id="windSpeed"></h1>
+          <p style="display: flex;"><p>Direction Degrees:</p><p id="degreeDir"> </p></p>
+        </div>
+  
+      </div>
+    </div>
+   </div>
+  </body>
+  <script src="index.js"></script>
+</html>
